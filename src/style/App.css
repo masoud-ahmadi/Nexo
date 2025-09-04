@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+@layer base {
+    *,:after,:before,::backdrop,::file-selector-button {
+        border-color: var(--theme-nexo-border)
+    }
+
+    
+    .theme_button {
+        padding: .5rem;
+        cursor: pointer;
+        border-radius: var(--theme-nexo-rounded);
+        -webkit-box-shadow: 0 4px 6px -1px rgb(0 0 0 / .1),0 2px 4px -2px rgb(0 0 0 / .1);
+        box-shadow: 0 4px 6px -1px #0000001a,0 2px 4px -2px #0000001a;
+        cursor: pointer;
+    }
+
+    button:focus-visible {
+        outline:0
+    }
+
+   
+}
+
+
+@layer utilities {
+ 
+
+}
+
+
+@font-face {
+    font-family: rokh;
+    src: url(../fonts/rokh/RokhFaNum-Medium.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 600
+}
+
+@font-face {
+    font-family: rokh;
+    src: url(../fonts/rokh/RokhFaNum-Bold.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 700
+}
+
+@theme{
+    --color-theme-nexo-primary:var(--theme-nexo-primary);
+    --color-theme-nexo-secondary:var(--theme-nexo-secondary);
+    --color-theme-nexo-content:var(--theme-nexo-content);
+    --color-theme-nexo-success:var(--theme-nexo-success);
+}
+
+
+
+:root {
+    --theme-nexo-rounded:.25rem;
+    --theme-nexo-primary: #1E3A8A;
+    --theme-nexo-secondary: #06B6D4;
+    --theme-nexo-content: #F9FAFB;
+    --theme-nexo-success: #10B981;
+    --theme-nexo-warning: #F59E0B;
+    --theme-nexo-error: #EF4444;
+    --theme-nexo-border: #dfe7ef;
+    --theme-nexo-gray-900: #111827;
+    --theme-nexo-gray-200: #6B7280;
+
+    --theme-Dark-border: #64748b63;
+   --theme-danger: #d32929;
+    --theme-allowed: #d50000;
+    --theme--Dark-nexo: #38bdf8;
+    --theme-Hover-nexo: #3151bc;
+
+    --theme-placeholder: #7f9eb9;
+    --theme-Dark-Input-color: #EAEAEA;
+    --theme-Dark-Input-Background: #334155;
+    --theme-Dark-App: #1e293b;
+    --theme-Content: #f1f5f8;
+    --theme-Dark-Content: #0f172a;
+    --theme--Dark-bg-themeContentBox: #1e293b;
+    --theme-border-input: #cbd5e1;
+    --theme--Color-body: #2d3748;
+}
+
+
+[data-theme=purpule] {
+    --theme-nexo: #6c5ce7;
+   
+}
+
+
+[data-fontSize="14"] {
+    --theme-size-14: 14px
+}
+
+[data-fontSize="16"] {
+    --theme-size-16: 16px
+}
+
+[data-fontSize="18"] {
+    --theme-size-18: 18px
+}
+
+[data-fontSize="20"] {
+    --theme-size-20: 20px
+}
+
+body {
+    font-family: rokh,"tahoma","serif";
+    direction: rtl;
+}
+
+
+html,
+body{
+    scroll-behavior: smooth;
+}
+
+* {
+    scrollbar-color: var(--theme-nexo-primary) transparent!important
+}
+
+*::-webkit-scrollbar {
+    width: .25rem;
+    height: 0rem
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--theme-nexo-primary);
+    border-radius: 1rem;
+    border: 2px solid transparent;
+    background-clip: content-box
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 1rem
+}
+
+.no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none
+}
+
+.nexo_app {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: .75rem 1.25rem
+}
+
+
+
+.nexo_content {
+    padding-top: 0;
+    -webkit-padding-end: 1.25rem;
+    padding-inline-end:1.25rem;-webkit-padding-start: 1.25rem;
+    padding-inline-start:1.25rem;padding-bottom: 1.25rem;
+    min-height: 100dvh;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    position: relative
+}
+
+
+::-webkit-input-placeholder {
+    color: var(--theme-placeholder)
+}
+
+:-ms-input-placeholder {
+    color: var(--theme-placeholder)
+}
+
+::-ms-input-placeholder {
+    color: var(--theme-placeholder)
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+input[type=password]::-ms-reveal,input[type=password]::-ms-clear {
+    display: none
+}
+
+input[type=password]::-webkit-clear-button,input[type=password]::-webkit-reveal-button {
+    display: none
+}
+
+.theme_input {
+    padding: .5rem;
+    border-radius: var(--theme-nexo-rounded);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    background-color: var(--theme-bg-input);
+    border-width: 1px;
+    border-color: var(--theme-border-input)
+}
+
+input[disabled] {
+    background-color: var(--theme-bg-disabled)
+}
+
+.theme_input:focus {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px var(--theme-nexo-primary) inset;
+    box-shadow: 0 0 0 2px var(--theme-nexo) inset
+}
+
+.theme_input:not(:focus):hover {
+    border-color: var(--theme-nexo-primary);
+    -webkit-transition: border-color .5s;
+    -o-transition: border-color .5s;
+    transition: border-color .5s
+}
+
+
+.theme_button:focus {
+    outline: 0
+}
+
+button.theme_button:active {
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95)
+}
+
+.theme_button:not(button) {
+    text-align: center
+}
