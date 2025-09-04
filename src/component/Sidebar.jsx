@@ -2,7 +2,7 @@ const Sidebar = () =>{
     return <>
 
 <aside
-  className="sidebar h-dvh bg-theme-nexo-content rounded-2xl  max-w-56 w-full overflow-y-hidden border-e  space-y-3"
+  className="sidebar h-dvh bg-theme-nexo-content rounded-2xl  max-w-56 w-full overflow-y-hidden  space-y-3"
 >
   <div  className="flex items-center justify-center p-2 border-b"
   >
@@ -10,8 +10,7 @@ const Sidebar = () =>{
       
         <img  src="./Images/Logo/Logo1.png" alt="Logo" />
        
-    
-
+  
       
     </a>
   </div>
