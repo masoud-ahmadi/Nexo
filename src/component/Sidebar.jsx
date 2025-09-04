@@ -1,3 +1,6 @@
+import { Link, Links } from "react-router-dom"
+import NexoIcon from "./NexoIcon"
+
 const Sidebar = () =>{
     return <>
 
@@ -9,9 +12,6 @@ const Sidebar = () =>{
     <a href="#" className="max-w-32 block  ">
       
         <img  src="./Images/Logo/Logo1.png" alt="Logo" />
-       
-  
-      
     </a>
   </div>
 
@@ -20,28 +20,34 @@ const Sidebar = () =>{
   >
     <nav>
       <ul>
-        <li>
-          <div className="bg-gray-200 ">
-            <h3
-              className="menu-group-title"
+        <li className="space-y-2">
+
+                
+
+          <div className="bg-gray-200 rounded-md flex justify-between items-center p-2">
+            <div
+              className="flex items-center gap-2"
             >
+            <NexoIcon name="MdShoppingCart"/>
+
               مدیریت فروشگاه
-            </h3>
+            </div>
+          <NexoIcon name="BiChevronDown"/>
           </div>
-          <ul className="">
+          <ul className="px-2">
           <li>
-            <a
-              href="#"
+            <Link to={"#"}
+              
               className="menu-item group"
             >
               
-              <span
-                className="menu-item-text"
+              <h3
+                className=""
               >
                 افزودن مرکز
-              </span>
+              </h3>
 
-            </a>
+            </Link>
           </li>
 
           

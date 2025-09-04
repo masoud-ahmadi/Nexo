@@ -6,8 +6,8 @@ import NexoIcon from "./NexoIcon"
 
 const ContentHeader =()=>{
     return<>
-
       <NexoIcon name="TbHomeCheck" className="text-theme-nexo-primary " iconSize="text-2xl"  />
+
 
 <header
   className="sticky top-0 z-99999 flex w-full border-gray-200 bg-theme-nexo-primary  text-theme-nexo-primary lg:border-b "
