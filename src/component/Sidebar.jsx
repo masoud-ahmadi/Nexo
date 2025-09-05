@@ -1,5 +1,5 @@
 import { Link, Links } from "react-router-dom";
-import NexoIcon from "./NexoIcon";
+import NexoIcon from "./DefaultComponent/NexoIcon";
 
 const Sidebar = () => {
   return (
@@ -24,7 +24,10 @@ const Sidebar = () => {
                 </div>
                 <ul className="px-2">
                   <li>
-                    <Link to={"#"} className="menu-item group">
+                    <Link
+                      to={"#"}
+                      className="menu-item bg-theme-nexo-content group nexo_button"
+                    >
                       <h3 className="">افزودن مرکز</h3>
                     </Link>
                   </li>
