@@ -1,7 +1,7 @@
 import ContentHeader from "./ContentHeader"
 
 const Content =()=>{
-    return<>
+    return<> 
     <div className="nexo_content bg-theme-nexo-content rounded-2xl border">
         <ContentHeader/>
     </div>
