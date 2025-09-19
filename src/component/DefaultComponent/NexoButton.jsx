@@ -1,6 +1,6 @@
 const NexoButton =()=>{
     return<>
-    <button>
+    <button >
         
     </button>
     

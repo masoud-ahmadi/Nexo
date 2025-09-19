@@ -1,235 +1,232 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: rokh;
-  src: url(../fonts/rokh/RokhFaNum-Medium.woff2) format("woff2");
-  font-display: swap;
-  font-weight: 600;
+    font-family: rokh;
+    src: url(../fonts/rokh/RokhFaNum-Medium.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 600;
 }
 
 @font-face {
-  font-family: rokh;
-  src: url(../fonts/rokh/RokhFaNum-Bold.woff2) format("woff2");
-  font-display: swap;
-  font-weight: 700;
+    font-family: rokh;
+    src: url(../fonts/rokh/RokhFaNum-Bold.woff2) format("woff2");
+    font-display: swap;
+    font-weight: 700;
 }
 
 ::-webkit-input-placeholder {
-  color: var(--theme-placeholder);
+    color: var(--theme-placeholder);
 }
 
 :-ms-input-placeholder {
-  color: var(--theme-placeholder);
+    color: var(--theme-placeholder);
 }
 
 ::-ms-input-placeholder {
-  color: var(--theme-placeholder);
+    color: var(--theme-placeholder);
 }
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
+    -webkit-appearance: button;
+    font: inherit;
 }
 
 input[type="password"]::-ms-reveal,
 input[type="password"]::-ms-clear {
-  display: none;
+    display: none;
 }
 
 input[type="password"]::-webkit-clear-button,
 input[type="password"]::-webkit-reveal-button {
-  display: none;
+    display: none;
 }
 
 @layer base {
-  *,
-  :after,
-  :before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--theme-nexo-border);
-  }
+    *,
+    :after,
+    :before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--theme-nexo-border);
+    }
 
-  .nexo_button {
-    padding: 0.5rem;
-    cursor: pointer;
-    border-radius: var(--theme-nexo-rounded);
-    -webkit-box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
-      0 2px 4px -2px rgb(0 0 0 / 0.1);
-    box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
-    cursor: pointer;
-    border-color: #d1d9e0;
-    border-width: 1px;
-    display: block;
-    height: var(--control-medium-size);
-    position: relative;
-    -webkit-user-select: none;
-    user-select: none;
-  }
-  button:focus-visible {
-    outline: 0;
-  }
-  .nexo_button:focus {
-    outline: 0;
-  }
+    .nexo_button {
+        padding: 0.5rem;
+        cursor: pointer;
+        border-radius: var(--theme-nexo-rounded);
+        -webkit-box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+        0 2px 4px -2px rgb(0 0 0 / 0.1);
+        box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+        cursor: pointer;
+        border-color: #d1d9e0;
+        border-width: 1px;
+        display: block;
+        height: var(--control-medium-size);
+        position: relative;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    button:focus-visible {
+        outline: 0;
+    }
+
+    .nexo_button:focus {
+        outline: 0;
+    }
 }
 
 @layer utilities {
 }
 
 @theme {
-  --color-theme-nexo-primary: var(--theme-nexo-primary);
-  --color-theme-nexo-secondary: var(--theme-nexo-secondary);
-  --color-theme-nexo-content: var(--theme-nexo-content);
-  --color-theme-nexo-success: var(--theme-nexo-success);
+    --color-theme-nexo-primary: var(--theme-nexo-primary);
+    --color-theme-nexo-secondary: var(--theme-nexo-secondary);
+    --color-theme-nexo-content: var(--theme-nexo-content);
+    --color-theme-nexo-success: var(--theme-nexo-success);
 }
 
 :root {
-  --theme-nexo-rounded: 0.25rem;
-  --theme-nexo-primary: #1e3a8a;
-  --theme-nexo-secondary: #06b6d4;
-  --theme-nexo-content: #f6f8fa;
-  --theme-nexo-success: #10b981;
-  --theme-nexo-warning: #f59e0b;
-  --theme-nexo-error: #ef4444;
-  --theme-nexo-border: #d1d9e0;
-  --theme-nexo-gray-900: #111827;
-  --theme-nexo-gray-200: #6b7280;
-  --theme-Dark-border: #64748b63;
-  --theme-danger: #d32929;
-  --theme-allowed: #d50000;
-  --theme--Dark-nexo: #38bdf8;
-  --theme-Hover-nexo: #3151bc;
-  --theme-placeholder: #7f9eb9;
-  --theme-Dark-Input-color: #eaeaea;
-  --theme-Dark-Input-Background: #334155;
-  --theme-Dark-App: #1e293b;
-  --theme-Content: #f1f5f8;
-  --theme-Dark-Content: #0f172a;
-  --theme--Dark-bg-themeContentBox: #1e293b;
-  --theme-border-input: #cbd5e1;
-  --theme--Color-body: #2d3748;
+    --theme-nexo-rounded: 0.25rem;
+    --theme-nexo-primary: #1e3a8a;
+    --theme-nexo-secondary: #06b6d4;
+    --theme-nexo-content: #f6f8fa;
+    --theme-nexo-success: #10b981;
+    --theme-nexo-warning: #f59e0b;
+    --theme-nexo-error: #ef4444;
+    --theme-nexo-border: #d1d9e0;
+    --theme-nexo-gray-900: #111827;
+    --theme-nexo-gray-200: #6b7280;
+    --theme-Dark-border: #64748b63;
+    --theme-danger: #d32929;
+    --theme-allowed: #d50000;
+    --theme--Dark-nexo: #38bdf8;
+    --theme-Hover-nexo: #3151bc;
+    --theme-placeholder: #7f9eb9;
+    --theme-Dark-Input-color: #eaeaea;
+    --theme-Dark-Input-Background: #334155;
+    --theme-Dark-App: #1e293b;
+    --theme-Content: #f1f5f8;
+    --theme-Dark-Content: #0f172a;
+    --theme--Dark-bg-themeContentBox: #1e293b;
+    --theme-border-input: #cbd5e1;
+    --theme--Color-body: #2d3748;
 }
 
 [data-theme="purpule"] {
-  --theme-nexo: #6c5ce7;
+    --theme-nexo: #6c5ce7;
 }
 
 [data-fontSize="14"] {
-  --theme-font-size: 14px;
+    --theme-font-size: 14px;
 }
 
 [data-fontSize="16"] {
-  --theme-font-size: 16px;
+    --theme-font-size: 16px;
 }
 
 [data-fontSize="18"] {
-  --theme-font-size: 18px;
+    --theme-font-size: 18px;
 }
 
 [data-fontSize="20"] {
-  --theme-font-size: 20px;
+    --theme-font-size: 20px;
 }
 
 body {
-  font-family: rokh, "tahoma", "serif";
-  direction: rtl;
+    font-family: rokh, "tahoma", "serif";
+    direction: rtl;
 }
 
 html,
 body {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 * {
-  scrollbar-color: var(--theme-nexo-primary) transparent !important;
+    scrollbar-color: var(--theme-nexo-primary) transparent !important;
 }
 
 *::-webkit-scrollbar {
-  width: 0.25rem;
-  height: 0rem;
+    width: 0.25rem;
+    height: 0rem;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--theme-nexo-primary);
-  border-radius: 1rem;
-  border: 2px solid transparent;
-  background-clip: content-box;
+    background-color: var(--theme-nexo-primary);
+    border-radius: 1rem;
+    border: 2px solid transparent;
+    background-clip: content-box;
 }
 
 *::-webkit-scrollbar-track {
-  background: transparent;
-  border-radius: 1rem;
+    background: transparent;
+    border-radius: 1rem;
 }
 
 .no-scrollbar {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .no-scrollbar::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .nexo_app {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding: 0.75rem 1.25rem;
+    padding: 0.75rem 1.25rem;
+    max-width: 1980px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100dvh;
 }
 
 .nexo_content {
-  padding-top: 0;
-  -webkit-padding-end: 1.25rem;
-  padding-inline-end: 1.25rem;
-  -webkit-padding-start: 1.25rem;
-  padding-inline-start: 1.25rem;
-  padding-bottom: 1.25rem;
-  min-height: 100dvh;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 0%;
-  flex: 1 1 0%;
-  position: relative;
+    padding: .75rem;
+    flex: 1;
+    position: relative;
+
 }
 
 .nexo_input {
-  padding: 0.5rem;
-  border-radius: var(--theme-nexo-rounded);
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 100%;
-  background-color: var(--theme-bg-input);
-  border-width: 1px;
-  border-color: var(--theme-border-input);
+    padding: 0.5rem;
+    border-radius: var(--theme-nexo-rounded);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    background-color: var(--theme-bg-input);
+    border-width: 1px;
+    border-color: var(--theme-border-input);
 }
 
 input[disabled] {
-  background-color: var(--theme-bg-disabled);
+    background-color: var(--theme-bg-disabled);
 }
 
 .nexo_input:focus {
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 2px var(--theme-nexo-primary) inset;
-  box-shadow: 0 0 0 2px var(--theme-nexo) inset;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px var(--theme-nexo-primary) inset;
+    box-shadow: 0 0 0 2px var(--theme-nexo) inset;
 }
 
 .nexo_input:not(:focus):hover {
-  border-color: var(--theme-nexo-primary);
-  -webkit-transition: border-color 0.5s;
-  -o-transition: border-color 0.5s;
-  transition: border-color 0.5s;
+    border-color: var(--theme-nexo-primary);
+    -webkit-transition: border-color 0.5s;
+    -o-transition: border-color 0.5s;
+    transition: border-color 0.5s;
 }
 
 .nexo_button:active {
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 .nexo_button:not(button) {
-  text-align: center;
+    text-align: center;
 }
 
-.nexo_content{
-    @apply bg-theme-nexo-content; 
+.nexo_content {
+    @apply bg-theme-nexo-content;
 }

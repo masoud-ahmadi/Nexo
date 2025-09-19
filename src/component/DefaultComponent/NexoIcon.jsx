@@ -6,7 +6,7 @@ const NexoIcon = () => {
 
 
   return <>
-  hi
+  icon
   </>;
 };
 
